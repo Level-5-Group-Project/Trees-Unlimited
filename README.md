@@ -6,4 +6,5 @@ Jeff - It is connected to MongoDB and through mongoose and the name of the datab
 
 Maxine - testing code
 
+Maxine-added error handling middleware and 
 
