@@ -7,7 +7,7 @@ app.use(morgan("dev"))
 
 app.use(express.json())
 app.use('/tree', require('./routes/treeRoutes.js'))
-// app.use('/form', require('./routes/formRoutes'))
+app.use('/form', require('./routes/formRoutes'))
 mongoose.connect("mongodb+srv://jaconn4242:JeffAndMaxine@cluster0.cwtna.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", () => {
     console.log("Connected to the Database")
 })
