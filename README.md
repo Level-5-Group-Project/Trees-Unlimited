@@ -1,5 +1,8 @@
-# Trees-Unlimited
+# Trees-Unlimited Notes for Team
 
-Main push!
+Jeff - Consists of a server.js file that is listening on port 9000
 
-branch test
+Jeff - It is connected to MongoDB and through mongoose and the name of the database is Trees Unlimited Project.
+
+
+
