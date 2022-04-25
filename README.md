@@ -6,5 +6,10 @@ Jeff - It is connected to MongoDB and through mongoose and the name of the datab
 
 Maxine - testing code
 
-Maxine-added error handling middleware and 
+
+Maxine-added error handling middleware and models and routes and schema's(Still in progress)
+
+Jeff - Add the client folder, then created the react app
+
+
 
