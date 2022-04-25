@@ -9,7 +9,7 @@ Maxine - testing code
 
 Maxine-added error handling middleware and models and routes and schema's(Still in progress)
 
-Jeff - Add the client folder, then created the react app
+Jeff - Added the client folder, then created the react app
 
 
 
