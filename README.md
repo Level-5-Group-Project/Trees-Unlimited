@@ -6,4 +6,6 @@ Jeff - It is connected to MongoDB and through mongoose and the name of the datab
 
 Maxine - testing code
 
+Jeff - Add the client folder, then created the react app
+
 
