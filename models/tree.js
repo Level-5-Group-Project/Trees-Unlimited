@@ -13,8 +13,14 @@ const treeSchema =new Schema({
         type: String,
         
     },
+    imgUrl:{
+        type: String
+    },
+    description:{
+        type: String
+    },
     size:{
-        type:Number, 
+        type:String, 
         
     },
     price:{
