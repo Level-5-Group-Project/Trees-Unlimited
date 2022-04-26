@@ -1,0 +1,22 @@
+.tree-card-container{
+    box-shadow: 0px 2px 10px green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1em auto;
+    padding: 1em;
+    width: 40%;
+    background-color: rgb(218, 226, 208);
+}
+.tree-type{
+    background-color: green;
+    color: white;
+    width: fit-content;
+    padding: .50em;
+    margin: 0px;
+    border-radius: 10px;
+}
+.tree-name{
+    border: 1px solid black;
+    text-align: center;
+}
