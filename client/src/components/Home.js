@@ -5,7 +5,7 @@ import "../styles/Home.css"
 
 function Home() {
 
-    const {TreeData, getAllTrees} = useContext(MainContext)
+  const {TreeData, getAllTrees} = useContext(MainContext)
 
   useEffect(() => {
       getAllTrees()
@@ -14,12 +14,21 @@ function Home() {
   
     
   return (
-    <>
-    <div className='tree-cards'> 
-      {TreeData.map(tree => <TreeCard {...tree} key={tree.name}/>)}
-    </div>
-      
-    </> 
+    <div>
+      <h1 className='home-title'>Welcome to Trees Unlimited!</h1>
+      <br />
+      <br />
+      <div className='fieldset-container'>
+        <h3 className='fieldset-title'>Browse our products</h3>
+        <div className='tree-fieldset'>
+          <div className='tree-cards'> 
+            {TreeData.map(tree => <TreeCard {...tree} key={tree.name}/>)}
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+    </div> 
   )
 }
 

@@ -1,5 +1,6 @@
 .Header{
     background-color: rgb(9, 46, 78);
+    width: 100%
   }
   .NavBar{
     display: flex;
@@ -14,7 +15,7 @@
     color: white
   }
   nav a.active{
-    background-color: rgb(70, 212, 120);
-    padding: 1em;
+    background-color: rgb(30, 148, 39);
+    padding: 1em 3em 1em 3em;
     color:rgb(9, 46, 78)
   }
