@@ -1,0 +1,20 @@
+.Header{
+    background-color: rgb(9, 46, 78);
+  }
+  .NavBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  nav a {
+    text-decoration: none;
+    text-align: center;
+    padding: 1em;
+    color: white
+  }
+  nav a.active{
+    background-color: rgb(70, 212, 120);
+    padding: 1em;
+    color:rgb(9, 46, 78)
+  }
