@@ -8,19 +8,18 @@ function ContextProvider(props) {
     const [TreeData, setTreeData] = useState([])
 
     function getAllTrees(){
-        axios.get('/tree')
+        return axios.get('/tree')
         .then(res => setTreeData(res.data))
         .catch(err => console.log(err))
     }
 
-    useEffect(() => {
-        getAllTrees()
-    }, [])
+ 
 
     return(
         <MainContext.Provider value={{
             TreeData,
             setTreeData,
+            getAllTrees
         }}>
             {props.children}
         </MainContext.Provider>

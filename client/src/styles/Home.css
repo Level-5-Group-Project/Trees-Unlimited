@@ -1,0 +1,6 @@
+.tree-cards{
+    margin-top: 3em;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
