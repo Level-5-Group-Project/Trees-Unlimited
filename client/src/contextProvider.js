@@ -1,16 +1,26 @@
-import React, {useState} from "react"
+import React, {useState, useEffect} from "react"
+import axios from "axios"
 
 const MainContext = React.createContext()
 
-
 function ContextProvider(props) {
 
-    const [color, setColor] = useState("red")
-    console.log(color)
+    const [TreeData, setTreeData] = useState([])
+
+    function getAllTrees(){
+        axios.get('/tree')
+        .then(res => setTreeData(res.data))
+        .catch(err => console.log(err))
+    }
+
+    useEffect(() => {
+        getAllTrees()
+    }, [])
+
     return(
         <MainContext.Provider value={{
-            color,
-            setColor
+            TreeData,
+            setTreeData,
         }}>
             {props.children}
         </MainContext.Provider>

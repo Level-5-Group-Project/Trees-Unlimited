@@ -1,8 +1,16 @@
-import React from 'react'
+import React, {useContext} from 'react'
+import { MainContext } from '../contextProvider'
+import TreeCard from './TreeCard'
 
 function Home() {
+
+    const {TreeData} = useContext(MainContext)
+
+    
   return (
-    <div>Home</div>
+    <>
+       {TreeData.map(tree => <TreeCard {...tree} key={tree.name}/>)}
+    </> 
   )
 }
 
