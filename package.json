@@ -18,9 +18,11 @@
   },
   "homepage": "https://github.com/Level-5-Group-Project/Trees-Unlimited#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.3",
     "mongoose": "^6.3.1",
     "morgan": "^1.10.0",
     "react-router-dom": "^6.3.0"
-  }
+  },
+  "proxy": "http://localhost:9000"
 }

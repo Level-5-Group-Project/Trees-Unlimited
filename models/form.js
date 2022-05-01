@@ -17,4 +17,5 @@ const formSchema = new Schema({
         type:Number
     },
 })
+
 module.exports = mongoose.model('Form', formSchema)
