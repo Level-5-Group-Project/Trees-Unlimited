@@ -10,6 +10,7 @@ app.use(cors())
 app.use('/tree', require('./routes/treeRoutes.js'))
 // app.use('/service', require('./routes/formRoutes'))
 app.use('/service', require('./routes/serviceRoutes'))
+app.use('/form', require('./routes/formRoutes'))
 
 
 mongoose.connect("mongodb+srv://jaconn4242:JeffAndMaxine@cluster0.cwtna.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", () => {

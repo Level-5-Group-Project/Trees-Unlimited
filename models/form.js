@@ -16,6 +16,9 @@ const formSchema = new Schema({
     phoneNumber:{
         type:Number
     },
+    comment: {
+        type: String
+    }
 })
 
 module.exports = mongoose.model('Form', formSchema)
