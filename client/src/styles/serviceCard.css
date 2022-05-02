@@ -1,12 +1,16 @@
 .service-card{
     display: flex;
     flex-direction: column;
-    width: fit-content;
+    width: 90%;
+    margin: auto;
     border-radius: 10px;
     box-shadow: 0 2px 10px 1px;
+    position: relative;
+    border: 2px solid black;
+    margin: 1em;
  }
  .serviceimg{
-     position: static;
+     position: absolute;
      width: 250px;
      height: 250px;
      border-radius: 10px;
@@ -15,6 +19,9 @@
      padding: 1em;
  }
  .service{
+     margin-top: 7em;
+     text-align: right;
+     margin-right: 4em;
      font-family: 'Source Sans Pro', sans-serif;
      color: #009cac;
      text-decoration: none;
