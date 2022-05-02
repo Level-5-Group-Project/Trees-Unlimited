@@ -4,10 +4,10 @@ import "../styles/serviceCard.css"
 
 function ServiceCard(props) {
     
-    const {service,  priceRange, imgUrl, description } = props
+    const {service,  priceRange, imgUrl, description} = props
   return (
       <div className='service-card'>
-            <img src={imgUrl}  className='serviceimg'/>
+            <img src={imgUrl} alt="" className='serviceimg'/>
           <div className='details'>
             <div className='service'>{service}</div>
             <p className='description'>{description}</p>

@@ -3,7 +3,6 @@ const Schema =mongoose.Schema
 const serviceSchema =new Schema({
     service:{
         type: String,
-        
     },
     imgUrl:{
         type: String
@@ -13,7 +12,6 @@ const serviceSchema =new Schema({
     },
     priceRange:{
         type:Number, 
-        
     }
 }
 )

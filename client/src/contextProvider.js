@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import axios from "axios"
 
 const MainContext = React.createContext()
@@ -6,7 +6,9 @@ const MainContext = React.createContext()
 function ContextProvider(props) {
 
     const [TreeData, setTreeData] = useState([])
-    const [newService, setNewService] = React.useState([])
+    const [newService, setNewService] = useState([])
+    const [formData, setFormData] = useState([])
+
     function getAllTrees() {
         return axios.get('/tree')
             .then(res => setTreeData(res.data))
@@ -14,14 +16,23 @@ function ContextProvider(props) {
     }
 
     function getAllServices(){
-       
         return axios.get('/service')
-        .then(res =>{
-            console.log(res.data)
-            setNewService(res.data)
-        })
-        .catch(err =>console.log(err))
-            
+            .then(res =>{
+                // console.log(res.data)
+                setNewService(res.data)
+            })
+            .catch(err => console.log(err))
+    }
+    function getFormData(){
+        return axios.get('/form')
+            .then(res => setFormData(res.data))
+            .catch(err => console.log(err))
+    }
+    // post request made for services form
+    function postForm (newFormData) {
+        return axios.post("/form", newFormData)
+            .then(res => setFormData(prevData => [...prevData, res.data]))
+            .catch(error => console.log(error))
     }
 
     // const service = {
@@ -75,11 +86,13 @@ function ContextProvider(props) {
     return (
         <MainContext.Provider value={{
             TreeData,
+            newService,
+            formData,
+            getFormData,
             setTreeData,
             getAllTrees,
-            newService,
-            getAllServices
-
+            getAllServices,
+            postForm
         }}>
             {props.children}
         </MainContext.Provider>

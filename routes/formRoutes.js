@@ -8,12 +8,11 @@ formRouter.route('/')
                 res.status(500)
                 return next(err)
             }
-
            return res.status(200).send(forms)
         })
     })
   
-    .post((req, res,next)=>{
+    .post((req, res, next)=>{
         const newForm = new Form(req.body)
         
         console.log(req.body)
