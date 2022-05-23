@@ -5,8 +5,11 @@ const app = express()
 const cors = require('cors')
 app.use(morgan("dev"))
 
+// middleware
 app.use(express.json())
 app.use(cors())
+
+// Routes
 app.use('/tree', require('./routes/treeRoutes.js'))
 // app.use('/service', require('./routes/formRoutes'))
 app.use('/service', require('./routes/serviceRoutes'))

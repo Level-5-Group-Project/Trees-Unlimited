@@ -57,6 +57,7 @@ treeRouter.put('/:treeId',(req, res, next)=>{
         return res.status(200).send(updateTree)
     })
 })
+
 treeRouter.get('/search/type', (req, res) => {
     const type = req.query.type
     const filteredType = Tree.filter(tree => tree.type === type)

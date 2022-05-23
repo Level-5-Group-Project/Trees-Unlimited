@@ -20,9 +20,9 @@ function addFormEntry(newFormData) {
     }
   
   return (
-    <div>
+    <>
       <div className="showcase2">
-        <h1>Trees Unlimited</h1>
+        <h1 className='services-title'>Trees Unlimited</h1>
         <div className="24">
           <h2> 24/7 emergancy service</h2>
           <p>Serving residential areas and companies near you! Check out the services we provide!</p>
@@ -36,7 +36,7 @@ function addFormEntry(newFormData) {
         <h3>Our services Includes:</h3>
         {newService.map(service => <ServiceCard {...service} key={service.service}/>)}
       </div>
-    </div>
+    </>
 
   )
 }
